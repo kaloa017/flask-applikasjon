@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takk for din bestilling!</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Takk for din bestilling! Vi kontakter deg straks med mer detaljer om reisen din</h1>
+    <p>I mellomtiden, kan du ta en titt på detaljene du la inn. Dersom noe er feil, ikke nøl med å ta kontakt med oss.</p>
+
+    <h3>Detaljer om reisen din:</h3>
+    <p>Destinasjon: {{ destination }}</p>
+    <p>Antall dager: {{ days }}</p>
+    <p>Avreisedato: {{ depart }}</p>
+    <p>E-post: {{ email }}</p>
+    <p>ID nummer: {{ idNum }}</p>
+
+    <p>Vi kontakter deg på epostadressen oppgitt her.</p>
+
+    <a href="/">Trykk for å komme tilbake til hjemmesiden</a>
+</body>
+</html>

@@ -7,10 +7,46 @@
 .travel{
     border-style: solid;
     border-radius: 25px;
-    width: 200px;
-    height: 410px;
+    width: 250px;
+    height: 400px;
 }
 .travel img{
     width: 200px;
     border-radius: 25px;
+}
+
+.travel button{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+.travel img:active {
+    transform: scale(1.8);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+nav img {
+    width: 100px;
+    margin: 0;
+}
+
+nav a {
+    margin: 0;
 }

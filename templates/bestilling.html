@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,17 +9,69 @@
 <body>
     <h1>Reiseplanlegger</h1>
     <h3>Hvor vil du dra?</h3>
-    <div class="travel">
-        <img src="/static/japan.jpg" alt="Bilde av Mount Fuji med ett bygg med en kirsebær tre ved siden av." width="150px">
-        <p><strong>Japan</strong></p>
-        <p>Opplev Japansk mat og kultur. Book idag.</p>
-        <button type="button" id="jp">Les mer</button>
+    <a href="/">Tilbake til hovedsiden</a>
+    <div class="cards">
+        <div class="travel">
+            <img src="/static/img/japan.png" alt="Bilde av Mount Fuji med ett bygg med en kirsebær tre ved siden av." width="150px">
+            <p><strong>Japan</strong></p>
+            <p>Opplev Japansk mat og kultur. Book idag.</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="Japan">
+                <button type="submit" id="jp">Bestill</button> 
+            </form>
+            
+        </div>
+        <div class="travel">
+            <img src="/static/img/norway.png" alt="Bilde av norsk natur i Lotofen" width="150px">
+            <p><strong>Norge</strong></p>
+            <p>Vakker natur på hjemmebane. Billig reise.</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="Norge">
+                <button type="submit" id="no">Bestill</button>
+            </form>
+            
+        </div>
+        <div class="travel">
+            <img src="/static/img/germany.png" alt="Bilde av Tysk by med det tyske flagget" width="150px">
+            <p><strong>Tyskland</strong></p>
+            <p>Alt fra biler til fjell. Reis idag!</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="Tyskland">
+                <button type="submit" id="de">Bestill</button> 
+            </form>
+            
+        </div>
+        <div class="travel">
+            <img src="/static/img/slovenia.png" alt="Bilde av Slovensk natur og solnedgang" width="150px">
+            <p><strong>Slovenia</strong></p>
+            <p>Ivrig på sykling eller fjelltur? Dra til Slovenia!</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="Slovenia">
+                <button type="submit" id="sk">Bestill</button> 
+            </form>
+            
+        </div>
+        <div class="travel">
+            <img src="/static/img/us.png" alt="Bilde av Amerikansk by med det amerikanske flagget" width="150px">
+            <p><strong>USA</strong></p>
+            <p>Verdens mest varierende land. Her finner du alt.</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="USA">
+                <button type="submit" id="us">Bestill</button>
+            </form>
+            
+        </div>
+        <div class="travel">
+            <img src="/static/img/australia.png" alt="Bilde av Australsk by med det australske flagget" width="150px">
+            <p><strong>Australia</strong></p>
+            <p>Kenguruer og surfing noe for deg?</p>
+            <form action="/valg" method="get">
+                <input type="hidden" name="destination" value="Australia">
+                <button type="submit" id="au">Bestill</button>
+            </form>
+            
+        </div>
     </div>
-    <div class="travel">
-        <img src="/static/norge.jpg" alt="Bilde av norsk by med røde hus og fjell ved havet." width="150px">
-        <p><strong>Norge</strong></p>
-        <p>Vakker natur på hjemmebane. Billig reise.</p>
-        <button type="button" id="jp">Les mer</button>
-    </div>
+    
 </body>
 </html>

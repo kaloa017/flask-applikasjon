@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 100" role="img" aria-labelledby="title desc">
+  <title id="title">Løsåmoen Reisebyrå</title>
+  <desc id="desc">En enkel fjelltopp foran en sol, ved siden av navnet Løsåmoen Reisebyrå.</desc>
+  <circle cx="67" cy="30" r="13" fill="#E6A545"/>
+  <path d="M14 77 46 28 79 77M58 77 77 49 96 77" fill="none" stroke="#173F3A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="117" y="49" fill="#173F3A" font-family="Verdana, Arial, sans-serif" font-size="32" font-weight="700">Løsåmoen</text>
+  <text x="119" y="75" fill="#173F3A" font-family="Verdana, Arial, sans-serif" font-size="15" letter-spacing="3">REISEBYRÅ</text>
+</svg>

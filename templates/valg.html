@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velg dine reisevalg.</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Her kan du velge din bestilling.</h1>
+    <form action="{{ url_for('sendt') }}" method="POST">
+        <label for="destination">Velg destinasjon:</label>
+        <select id="destination" name="destination" required>
+            {% for country in countries %}
+            <option value="{{ country }}"
+                {% if destination == country %}selected{% endif %}>
+                {{ country }}
+            </option>
+            {% endfor %}
+        </select>
+
+        <label for="days">Antall dager:</label>
+        <input type="number" id="days" name="days" min="1" required>
+
+        <label for="depart">Avreisedato:</label>
+        <input type="date" name="depart" id="depart" required>
+
+        <fieldset>
+            <legend>Vil du ha reiseforsikring?</legend>
+
+            <input type="radio" id="insurance-yes" name="insurance" value="Ja" required>
+            <label for="insurance-yes">Ja</label>
+
+            <input type="radio" id="insurance-no" name="insurance" value="Nei">
+            <label for="insurance-no">Nei</label>
+        </fieldset>
+
+        
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <button type="submit">Send inn</button>
+    </form>
+        
+</body>
+</html>
